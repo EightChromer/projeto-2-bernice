@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário de Feedback NexTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="header" class="row justify-content-center text-center pt-4">
+            <h1 id="title">Formulário de Feedback NexTech</h1>
+            <hr>
+        </div>
+        <div id="form" class="row justify-content-center text-center pt-4 pb-5">
+            <form name="form1" onsubmit="return enviar();" method="post" enctype="text/plain">
+                <label id="letras" for="nome_usuario">Nome:</label><br>
+                <input type="text" class="borda" id="nome_usuario" name="nome_usuario" size="52" placeholder="Digite seu nome" required><br><br>
+                
+                <label id="letras" for="email_usuario">E-mail:</label><br>
+                <input type="email" class="borda" id="email_usuario" name="email_usuario" size="52" placeholder="Digite seu Email" required><br><br>
+                
+                <label id="letras" for="feedback">Feedback:</label><br>
+                <textarea class="borda" id="feedback" name="feedback" rows="5" cols="40" placeholder="Digite seu feedback" required></textarea><br><br>
+                
+                <h3 class="pb-3 pt-3">Pesquisa:</h3>
+                <label>
+                    <input type="radio" name="pesquisa" value="Sim" required> Sim
+                </label>
+                <label>
+                    <input type="radio" name="pesquisa" value="Não" required> Não
+                </label><br><br>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

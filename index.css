@@ -1,0 +1,22 @@
+#form{
+    background-color: gainsboro;
+
+}
+
+#title{
+    font-size: 50px;
+    color: white;
+}
+
+.borda{
+    border-radius: 5px;
+}
+#header{
+    background-color: rgb(0, 0, 92);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#letras{
+    font-size: 20px;
+}
